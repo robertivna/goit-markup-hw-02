@@ -7,6 +7,7 @@
     --grafite: #757575;
     --grey: #2F303A;
     --page: #F5F5F5;
+    --logo: #000000;
 }
 
 body {
@@ -14,20 +15,19 @@ body {
     background-color: var(--white);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
-    font-style: normal;
     font-size: 14px;
 }
 
-main {
+.hero-page {
     background-color: var(--page);
 }
 
-span {
+.logo-color {
     color: var(--blue);
 }
 
 .logo {
-    color: #000000;
+    color: var(--logo);
     font-weight: 700;
     font-size: 26px;
     text-decoration: none;
@@ -59,6 +59,14 @@ span {
     color: var(--white);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.06em;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88; 
+    display: flex;
+    align-items: center;
+    text-align: center;
+
 }
 
 .site-nav .link {
@@ -100,7 +108,7 @@ span {
 }
 
 .title {
-    font-weight: 700;
+    font-size: 14px;
     line-height: 1.1;
     text-transform: uppercase;
 }
@@ -125,7 +133,7 @@ span {
     color: var(--black);
 }
 
-footer {
+.footer-block {
     background-color: var(--grey);
 }
 
@@ -140,6 +148,7 @@ footer {
 .address-footer {
     color: var(--white);
     text-decoration: none;
+    font-style: normal;
 }
 
 .info-footer {
@@ -154,6 +163,10 @@ footer {
 }
 
 /* Portfolio */
+
+.filter-page {
+    background-color: var(--white);
+}
 
 .filter-link:hover, 
 .filter-link:focus {
@@ -176,12 +189,14 @@ footer {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    letter-spacing: 0.06em;
 }
 
 .project-kategory {
     font-size: 16px;
     line-height: 1.8;
     color: var(--grafite);
+    letter-spacing: 0.03em;
 }
 
 .info-footer:hover,
